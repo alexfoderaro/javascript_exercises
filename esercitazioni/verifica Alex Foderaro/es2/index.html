@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esericizio</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        const inserisciIntero = (messaggio, min, max) =>{
+            let numero
+            do{
+                numero = +prompt(messaggio)
+            } while(numero<min || numero>max)
+            return numero
+        } //funzione già fatta
+
+        const divisori = (divisoriNumero) => {
+            let divisori = []
+            for (let k=1; i<=divisoriNumero; k++){
+                if ((divisoriNumero%k)===0){
+                    divisori.push(k)
+                } //funzione già fatta
+            } 
+            alert(`I divisori sono ${divisori}`) 
+        }
+        n = inserisciIntero("inserisci il numero n",1,30)
+        let inputt 
+        for (let i=0; i<n; i++){
+            inputt = inserisciIntero("Inserisci numero ",0,Infinity) //minimo 0 massimo infinito
+            alert(`Il termime x è: ${inputt} e il divisore è ${i}`)
+            for (let f=1; f<inputt; f++){ //for per prendere i numeri prima di inputt
+                alert(`numero precedente = ${f}`)
+                divisori(f)
+            }                
+        }
+    </script>
+</body>
+</html>
