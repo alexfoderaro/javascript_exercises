@@ -26,5 +26,3 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       console.log(bodyFiltered3)
 
     })
-
-s
